@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>位置获取测试</title>
+</head>
+<body>
+     <h3>当前位置如下：</h3>
+     <p id="jstext">还未获取当前位置！</p>
+     <button onclick="jsCallAndroid()">获取当前位置</button>
+     <script>
+
+        function jsCallAndroid(){
+          alert("发起请求！");
+          var addStr = window.jca.JSCallAndroid();
+          setText(addStr);
+        }
+
+        function setText(addStr){
+            document.getElementById("jstext").innerHTML=(addStr);
+        }
+     </script>
+</body>
+</html>

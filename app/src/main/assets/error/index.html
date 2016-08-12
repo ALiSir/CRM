@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" /> <!-- main stylesheet -->
+<link rel="stylesheet" type="text/css" media="all" href="css/tipsy.css" /> <!-- Tipsy implementation -->
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+<![endif]-->
+
+<script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script> <!-- uiToTop implementation -->
+<script type="text/javascript" src="scripts/custom-scripts.js"></script>
+<script type="text/javascript" src="scripts/jquery.tipsy.js"></script> <!-- Tipsy -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+			
+	universalPreloader();
+						   
+});
+
+$(window).load(function(){
+
+	//remove Universal Preloader
+	universalPreloaderRemove();
+	
+	rotate();
+    dogRun();
+	dogTalk();
+	
+	//Tipsy implementation
+	$('.with-tooltip').tipsy({gravity: $.fn.tipsy.autoNS});
+						   
+});
+
+</script>
+
+
+<title>404 - Not found</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<div id="wrapper">
+<!-- 404 graphic -->
+	<div class="graphic"></div>
+<!-- 404 graphic -->
+<!-- Not found text -->
+	<div class="not-found-text">
+    	<h1 class="not-found-text">请求未响应...</h1>
+    </div>
+<!-- Not found text -->
+
+<div class="dog-wrapper">
+<!-- dog running -->
+	<div class="dog"></div>
+<!-- dog running -->
+	
+<!-- dog bubble talking -->
+	<div class="dog-bubble">
+    	
+    </div>
+    
+    <!-- The dog bubble rotates these -->
+    <div class="bubble-options">
+    	<p class="dog-bubble">
+        	汪~汪~~
+        </p>
+    	<p class="dog-bubble">
+	        <br />
+        	查看一下是否有网络连接！汪~汪~~
+        </p>
+        <p class="dog-bubble">
+        	<br />
+        	是否允许应用访问网络！汪~汪~
+        </p>
+		<p class="dog-bubble">
+        	我想要一块饼干~~<br /><img style="margin-top:8px" src="images/cookie.png" alt="cookie" />
+        </p>
+        <p class="dog-bubble">
+        	我需要一个伙伴~~ <br /><img style="margin-top:8px" src="images/cat.png" alt="cat" />
+        </p>
+        <p class="dog-bubble">
+        	你爱我吗？主人~汪~汪~汪~~
+        </p>
+    </div>
+    <!-- The dog bubble rotates these -->
+<!-- dog bubble talking -->
+</div>
+
+<!-- planet at the bottom -->
+	<div class="planet"></div>
+<!-- planet at the bottom -->
+</div>
+
+
+</body>
+</html>
