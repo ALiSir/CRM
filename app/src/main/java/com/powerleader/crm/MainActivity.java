@@ -153,6 +153,7 @@ public class MainActivity extends MyActivity {
     private void initWVSet(){
         WebSettings ws = mvb.getSettings();
         ws.setJavaScriptEnabled(true);
+        ws.setUserAgentString("ACRMBrowser");
         //配置JS调用android程序
         JSObject jso = new JSObject(MyActivity.getContext(),mHandler);
         mvb.addJavascriptInterface(jso,"jca");
